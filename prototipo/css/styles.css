@@ -303,3 +303,55 @@ header {
     padding: 0 20px 20px;
     color: #555;
 }
+
+/* HERO */
+.hero {
+    background-image: url('../img/LogoD.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 420px;
+}
+
+/* GALERÍA */
+.street-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    transition: transform .25s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.street-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-card h3,
+.photo-card p {
+    padding: 0 20px;
+}
+
+.photo-card h3 {
+    margin-top: 18px;
+}
+
+.photo-card p {
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
