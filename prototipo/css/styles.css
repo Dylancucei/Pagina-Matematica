@@ -244,3 +244,62 @@ header {
         font-size: 30px;
     }
 }
+
+/* =========================
+   MATEMÁTICAS EN LA CALLE
+========================= */
+
+.street-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.street-intro h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.street-intro p {
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+.street-gallery {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-placeholder {
+    height: 220px;
+    background: #dbe4ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 18px;
+}
+
+.photo-card h3 {
+    padding: 20px 20px 10px;
+}
+
+.photo-card p {
+    padding: 0 20px 20px;
+    color: #555;
+}
